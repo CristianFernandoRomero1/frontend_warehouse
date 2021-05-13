@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from "axios"
 
 export default {
   name: "Login",
@@ -86,6 +86,7 @@ export default {
         headers: {
           'Content-Type': 'application/json',
           token: mytoken, //the token is a variable which holds the token
+          frontend: 1
         },
       })
         .then((resp) => {
